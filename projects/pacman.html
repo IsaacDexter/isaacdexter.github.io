@@ -44,7 +44,7 @@
 										<p>A look into my pacman project.<br />
 										Github repository available <a href="https://github.com/IsaacDexter/Pacman">here</a>.</p>
 									</header>
-									<p>As part of my Games Programming course at Staffordshire university, I was tasked to create a version of pacman using the in house S2D library, which bore similarities to SDL. The task was very open-ended and gave a large amount of flexibility in terms of what we chose to include as 'Extra Features'. Some key features to my project are a level editor, with which a user can enter a text editor and create their own playlist of maps; local multiplayer, with one player controlling pacman and another controlling the ghost; and a highscores table, where the user can enter their crendentials and see if they have what it takes to get onto the scoreboard.</p>
+									<p>As part of my Games Programming course at Staffordshire university, I was tasked to create a version of pacman using the in house S2D library, which bore similarities to SDL. The task was very open-ended and gave a large amount of flexibility in terms of what we chose to include as 'Extra Features'. Some key features to my project are a level editor, with which a user can enter a text editor and create their own playlist of maps; local multiplayer, with one player controlling pacman and another controlling the ghost; and a highscores table, where the user can enter their initials and see if they have what it takes to get onto the scoreboard.</p>
 								</div>
 							</section>
 
@@ -62,7 +62,8 @@
 
 The largest hurdle I had to overcome was purely visual. I wanted the maze to have rounded corners, and an outline only on the edges pacman would skim. I didn't want to overcomplicate the level editor with a wide variety of symbols, so I had only one character representing walls. The level loader handles this problem by running through the text file as 3*3 grids, centered around each wall tile. The pattern the walls create is compared to an array which determines which frame in the sprite sheet that wall should use.
 
-Overall, the level creator was both the most difficult and the most rewarding feature for my pacman project, as it gave the player potentially infinite creativity. The system is also easy to alter should another element be introduced, such as a new variant of fruit.</p>
+Overall, the level creator was both the most difficult and the most rewarding feature for my pacman project, as it gave the player potentially infinite creativity. The system is also easy to alter should another element be introduced, such as a new variant of fruit.
+</p>
 											</div>
 										</article>
 										<article>
@@ -71,20 +72,22 @@ Overall, the level creator was both the most difficult and the most rewarding fe
 												<h4>The Multiplayer</h4>
 												<p>I lacked any sort of knowledge when it came to the introduction of AI, and while I feel I could have come up with a competent solution with just one map, the infinite variety of levels opened up to many possibilities to cover. The solution seemed obvious to me - use the greatest intelligence ever discovered: the human brain. 
 
-Implementation was very simple, as the ghost is akin to pacman in many ways. The only major changes were the inabilty to wrap around the screen, a faster movement speed, and not being able to pick up munchies. The  biggest challenge I faced was coming up with a way for the ghost to respawn. In the end I took inspiration from original ghost behaviours, and, upon being eaten by pacman, the ghost's body returns to its spawn point, while it's eyes remain where they are. The powerless ghost must return to its body to effectively respawn.
+Implementation was very simple, as the ghost is akin to pacman in many ways. The only major changes were the inability to wrap around the screen, a faster movement speed, and not being able to pick up munchies. The  biggest challenge I faced was coming up with a way for the ghost to respawn. In the end I took inspiration from original ghost behaviours, and, upon being eaten by pacman, the ghost's body returns to its spawn point, while its eyes remain where they are. The powerless ghost must return to its body to effectively respawn.
 
-Overall, the multiplayer was a simple solution to an otherwise very complex problem that opened up a new avenue of play to the game, setting apart from the original.</p>
+Overall, the multiplayer was a simple solution to an otherwise very complex problem that opened up a new avenue of play to the game, setting apart from the original.
+</p>
 											</div>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/Highscores.png" alt="" /></a>
 											<div class="inner">
 												<h4>The Highscore Table</h4>
-												<p>Highscores are an essential part of any arcade game, and while the level creator does render this feature somewhat obsolete (as the users can place as many munchies as they wish), it felt too important to omit. Luckily, all of the code I needed when it came to laoding .txt files had already seen implementation in the level loader, so this feature was not too challenging to include.
+												<p>Highscores are an essential part of any arcade game, and while the level creator does render this feature somewhat obsolete (as the users can place as many munchies as they wish), it felt too important to omit. Luckily, all of the code I needed when it came to loading .txt files had already seen implementation in the level loader, so this feature was not too challenging to include.
 
-The biggest hurdle I faced in the implementation of this feature was a way to display these scores. Due to the way the level laoding system worked, It would always try to load a new level following the completion of the old one. I overcame this obstacle by including an unbeatable 'level' with a large amount of blank space. I simply used the text renderer to draw the highscores table into this large blank space.
+The biggest hurdle I faced in the implementation of this feature was a way to display these scores. Due to the way the level loading system worked, It would always try to load a new level following the completion of the old one. I overcame this obstacle by including an unbeatable 'level' with a large amount of blank space. I simply used the text renderer to draw the highscores table into this large blank space.
 
-Overall, the highscores tabel was a simple system that added a certain competitive edge and element of replayability to the game, present in the original pacman.</p>
+Overall, the highscores table was a simple system that added a certain competitive edge and element of replayability to the game, present in the original pacman.
+</p>
 											</div>
 										</article>
 									</div>
