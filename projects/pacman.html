@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Read Only by HTML5 UP</title>
+		<title>Pacman</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,28 +16,14 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Willis Corto</a></h1>
-					<p>I got reprogrammed by a rogue AI<br />
-					and now I'm totally cray</p>
+					<p>A version of Pacman built as part of the Fundementals of Game and Graphical Systems module.</p>
 				</header>
 				<nav id="nav">
 					<ul>
 						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Things I Can Do</a></li>
-						<li><a href="#three">A Few Accomplishments</a></li>
-						<li><a href="#four">Contact</a></li>
+						<li><a href="#two">Features</a></li>
 					</ul>
 				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</footer>
 			</section>
 
 		<!-- Wrapper -->
@@ -49,88 +35,60 @@
 						<!-- One -->
 							<section id="one">
 								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
+									<img src="images/banner.png" alt="" />
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>Read Only</h2>
-										<p>Just an incredibly simple responsive site<br />
-										template freebie by <a href="http://html5up.net">HTML5 UP</a>.</p>
+										<h2>Pacman</h2>
+										<p>A look into my pacman project.<br />
+										Github repository available <a href="https://github.com/IsaacDexter/Pacman">here</a>.</p>
 									</header>
-									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+									<p>As part of my Games Programming course at Staffordshire university, I was tasked to create a version of pacman using the in house S2D library, which bore similarities to SDL. The task was very open-ended and gave a large amount of flexibility in terms of what we chose to include as 'Extra Features'. Some key features to my project are a level editor, with which a user can enter a text editor and create their own playlist of maps; local multiplayer, with one player controlling pacman and another controlling the ghost; and a highscores table, where the user can enter their crendentials and see if they have what it takes to get onto the scoreboard.</p>
 								</div>
 							</section>
 
-						<!-- Two -->
+						<!-- Two-->
 							<section id="two">
 								<div class="container">
-									<h3>Things I Can Do</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-									<ul class="feature-icons">
-										<li class="icon solid fa-code">Write all the code</li>
-										<li class="icon solid fa-cubes">Stack small boxes</li>
-										<li class="icon solid fa-book">Read books and stuff</li>
-										<li class="icon solid fa-coffee">Drink much coffee</li>
-										<li class="icon solid fa-bolt">Lightning bolt</li>
-										<li class="icon solid fa-users">Shadow clone technique</li>
-									</ul>
-								</div>
-							</section>
-
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>A Few Accomplishments</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+									<h3>Features</h3>
+									<p>A closer look at some of the keystone features in the pacman project, with a brief discussion on the process of their creation.</p>
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/LevelCreator.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>The Level Creator</h4>
+												<p>I always felt a major downside in the original Pacman was a lack of variation - the player travels through the same maze on loop, with each level having no effect on the environment. I considered simply creating more levels, but as I authored the tools to do this, I thought about letting the user take control of this element. Using a simple text editor such as notepad, the user can edit the .txt files that make up the levels. I included a readme explaining what each character related to in game, such as '.' representing a munchie.
+
+The largest hurdle I had to overcome was purely visual. I wanted the maze to have rounded corners, and an outline only on the edges pacman would skim. I didn't want to overcomplicate the level editor with a wide variety of symbols, so I had only one character representing walls. The level loader handles this problem by running through the text file as 3*3 grids, centered around each wall tile. The pattern the walls create is compared to an array which determines which frame in the sprite sheet that wall should use.
+
+Overall, the level creator was both the most difficult and the most rewarding feature for my pacman project, as it gave the player potentially infinite creativity. The system is also easy to alter should another element be introduced, such as a new variant of fruit.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/Multiplayer" alt="" /></a>
 											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>The Multiplayer</h4>
+												<p>I lacked any sort of knowledge when it came to the introduction of AI, and while I feel I could have come up with a competent solution with just one map, the infinite variety of levels opened up to many possibilities to cover. The solution seemed obvious to me - use the greatest intelligence ever discovered: the human brain. 
+
+Implementation was very simple, as the ghost is akin to pacman in many ways. The only major changes were the inabilty to wrap around the screen, a faster movement speed, and not being able to pick up munchies. The  biggest challenge I faced was coming up with a way for the ghost to respawn. In the end I took inspiration from original ghost behaviours, and, upon being eaten by pacman, the ghost's body returns to its spawn point, while it's eyes remain where they are. The powerless ghost must return to its body to effectively respawn.
+
+Overall, the multiplayer was a simple solution to an otherwise very complex problem that opened up a new avenue of play to the game, setting apart from the original.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/Highscores.png" alt="" /></a>
 											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>The Highscore Table</h4>
+												<p>Highscores are an essential part of any arcade game, and while the level creator does render this feature somewhat obsolete (as the users can place as many munchies as they wish), it felt too important to omit. Luckily, all of the code I needed when it came to laoding .txt files had already seen implementation in the level loader, so this feature was not too challenging to include.
+
+The biggest hurdle I faced in the implementation of this feature was a way to display these scores. Due to the way the level laoding system worked, It would always try to load a new level following the completion of the old one. I overcame this obstacle by including an unbeatable 'level' with a large amount of blank space. I simply used the text renderer to draw the highscores table into this large blank space.
+
+Overall, the highscores tabel was a simple system that added a certain competitive edge and element of replayability to the game, present in the original pacman.</p>
 											</div>
 										</article>
 									</div>
 								</div>
 							</section>
-
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</div>
-							</section>
-
-						<!-- Five -->
 						<!--
 							<section id="five">
 								<div class="container">
