@@ -1,12 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
-    "\\assets\\css",
-    "\\assets\\sass",
-    "\\assets\\sass\\libs",
-    "\\assets\\webfonts",
-    "\\icons"
+    "\\projects"
   ],
+  "SelectedNode": "\\projects\\blueprint-multiplayer.html",
   "PreviewInSolutionExplorer": false
 }
