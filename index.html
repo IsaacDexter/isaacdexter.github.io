@@ -18,137 +18,214 @@
   <body>
 
 <!--About me section, describing who I am and what I do!-->
-<h1>Isaac Dexter</h1>
-<h2>About Me</h2>
-<img src="assets/profile.JPG" alt="A photo of me holding a chicken!" style="width:128px;height:128px;"/>
-<p>
-    I'm a general programmer 🧑‍💻 with a keen interest in Graphics Programming - I've worked with DirectX 12, DirectX 11, and OpenGL.
-</p>
-<p>
-    I love taking part in game jams! 🎮 My most recent was TP 🧻, a short comedy horror game made in Unity for Scream Jam 2023.
-</p>
-<p>
-    I also enjoy:
+<div id="Nutshell">
+    <h1>Isaac Dexter</h1>
+    <ol>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Education">Education</a></li>
+    </ol>
+</div>
+
+<div id="About">
+    <h2>About</h2>
+    <img src="assets/profile.JPG" alt="A photo of me holding a chicken!" style="width:35%;"/>
+    <p>
+        I'm a general programmer 🧑‍💻 with a keen interest in Graphics Programming - I've worked with <a href="#EMTE">DirectX 12</a>, <a href="#DirectX-11-Graphics">DirectX 11</a>, and <a href="#Snail-Race">OpenGL</a>.
+    </p>
+    <p>
+        I love taking part in game jams! 🎮 My most recent was <a href="#TP">TP 🧻</a>, a short comedy horror game made in Unity for <a href="https://itch.io/jam/scream-jam-2023">Scream Jam 2023 💀</a>.
+    </p>
+    <h3>Hobbies</h3>
     <ul>
         <li>Climbing 🧗</li>
-        <li>Drumming 🥁</li>
+        <li><a href="https://sites.google.com/view/kroak/home">Drumming 🥁</a></li>
         <li>Hiking 🥾</li>
         <li>Falconry 🦅</li>
         <li>Baking 🍞</li>
     </ul>
-</p>
+</div>
 
 <!--Contact section, containing links to where else I am!-->
-<h2>Contact</h2>
-<ul>
-    <li><a href="https://uk.linkedin.com/in/isaac-dexter-aa1818224" title="linkedin">linkedin</a></li>
-    <li><a href="https://github.com/IsaacDexter" title="github">github</a></li>
-    <li><a href="https://docs.google.com/document/d/e/2PACX-1vRVIXV5KQ0P_dTeSegqeQqrUhfwy6Pf3ZZgioPZx9cK9i5uwm0KptKYElo2Fo3uxX8dVVGkeqGT-JwW/pub" title="resume">resume</a></li>
-    <li><a href="https://twitter.com/Isaac_W_Dexter" title="twitter">twitter</a></li>
-    <li><a href="mailto:isaacdexter@gmail.com" title="isaacdexter@gmail.com">isaacdexter@gmail.com</a></li>
-</ul>
+<div id="Contact">
+    <h2>Contact</h2>
+    <ul>
+        <li><a href="https://uk.linkedin.com/in/isaac-dexter-aa1818224" title="linkedin">linkedin</a></li>
+        <li><a href="https://github.com/IsaacDexter" title="github">github</a></li>
+        <li><a href="https://docs.google.com/document/d/e/2PACX-1vRVIXV5KQ0P_dTeSegqeQqrUhfwy6Pf3ZZgioPZx9cK9i5uwm0KptKYElo2Fo3uxX8dVVGkeqGT-JwW/pub" title="resume">resume</a></li>
+        <li><a href="https://twitter.com/Isaac_W_Dexter" title="twitter">twitter</a></li>
+        <li><a href="mailto:isaacdexter@gmail.com" title="isaacdexter@gmail.com">isaacdexter@gmail.com</a></li>
+    </ul>
+</div>
 
 <!--The various projects I've completed in both game jams and my course-->
-<h2>Projects</h2>
-<p>These projects are in a rough chronology. If you're interested in a project, clicking on one will take you to its subpage, where I'll talk about and show off the project even more!</p>
-<dl>
-    <div id="EMTE">
-    <dt><h3><a href="projects/emte.html" title="EMTE">EMTE</a></h3></dt>
-    <dd>
-        <a href="projects/emte.html" title="EMTE"><img src="assets/emte.png" alt="A screenshot of EMTE, showing a prototypical graphics application" style="width:512px;"/></a>
-        <p>
-            Euclidean Manifold Topology Engine, or <em>EMTE</em>, is the artefact I've been creating for my dissertation. 
-            It's a prototype for an engine and toolkit tailored to making things that defy the rules of geometry in our world.
-            Portals, hallways that bend back on themselves and all sorts of other impossible spaces, made possible.
-        </p>
-        <ul>
-            <li>DirectX 12</li>
-            <li>Graphics</li>
-            <li>Low-level</li>
-            <li>Rendering</li>
-            <li>C++</li>
-            <li>HLSL</li>
-        </ul>
-    </dd>
-    </div>
-
-    <div id="LLPO">
-    <dt><h3><a href="projects/llpo.html" title="LLPO">LLPO</a></h3></dt>
-    <dd>
-        <a href="projects/llpo.html" title ="LLPO"><img src="assets/llpo.png" alt="A screenshot of LLPO, showing bouncing cubes" style="width:512px;"/></a>
-        <p>
-            Low-Level Platform Optimization, or <em>LLPO</em>, is an optimized physics application completed for my <em>Low-Level Platform Optimization</em> <strong>Level 6</strong> module.
-            It's an optimized version of an OpenGL physics framework that makes use of memory management and asynchronous multithreading to improve performance.
-            I also ported this framework to the PlayStation 4 SDK, which involved getting familiar with Sony's PS4 graphics API and SDK.
-        </p>
-        <ul>
-            <li>OpenGL</li>
-            <li>ORBIS</li>
-            <li>Graphics</li>
-            <li>Physics</li>
-            <li>Low-level</li>
-            <li>Memory management</li>
-            <li>Asynchronous multithreading</li>
-            <li>C++</li>
-            <li>PSSL</li>
-        </ul>
-    </dd>
-    </div>
-
-    <div id="DirectX-11-Graphics">
-    <dt><h3><a href="projects/DirectX-11-Graphics.html" title="DirectX 11 Graphics">DirectX 11 Graphics</a></h3></dt>
-    <dd>
-        <a href="projects/DirectX-11-Graphics.html" title ="DirectX 11 Graphics"><img src="assets/directx-11-graphics.png" alt="A screen shot of DirectX 11 Graphics, showing detailed objects in a graphics application." style="width:512px;"/></a>
-        <p>
-            DirectX 11 Graphics is a graphics framework built in DirectX 11 for my <em>Further Games and Graphics Concepts</em> <strong>Level 5</strong> module.
-            It's a basic graphics framework that can load models and textures, facilitating the creation of various scenes, explorable through a flying camera.
-            It features Phong lighting, specular mapping, skyboxes and billboarding.
-        </p>
-        <ul>
-            <li>DirectX 11</li>
-            <li>Graphics</li>
-            <li>Rendering</li>
-            <li>C++</li>
-            <li>HLSL</li>
-        </ul>
-    </dd>
-    </div>
-
-    <div id="TP">
-        <dt><h3><a href="https://bonitaworalert.itch.io/tp" title="TP">TP</a></h3></dt>
+<div id="Projects">
+    <h2>Projects</h2>
+    <p>These projects are in a rough chronology. If you're interested in a project, clicking on one will take you to its subpage, where I'll talk about and show off the project even more!</p>
+    <dl>
+        <div id="EMTE">
+        <dt><h3><a href="projects/emte.html" title="EMTE">EMTE</a></h3></dt>
         <dd>
-            <a href="https://bonitaworalert.itch.io/tp" title ="TP"><img src="assets/tp.png" alt="TP's cover art, a drawing of a spooky bathroom." style="width:512px;"/></a>
-            <p>
-                TP is a silly, spooky first-person horror game made for <a href="https://itch.io/jam/scream-jam-2023">Scream Jam 2023</a>, where it placed 6th.
-                I helped make the game as part of a group three (two programmers and an artist) over a period of six weeks.
-                I worked on the UI, programming many of monster mechanics, level design and even voice acting!
+            <a href="projects/emte.html" title="EMTE"><img src="assets/emte.png" alt="A screenshot of EMTE, showing a prototypical graphics application" style="width:70%;"/></a>
+            <p style="width:70%;">
+                Euclidean Manifold Topology Engine, or <em>EMTE</em>, is the artefact I've been creating for my dissertation. 
+                It's a prototype for an engine and toolkit tailored to making things that defy the rules of geometry in our world.
+                Portals, hallways that bend back on themselves and all sorts of other impossible spaces, made possible.
             </p>
             <ul>
-                <li>Unity</li>
-                <li>UI</li>
-                <li>Gameplay</li>
-                <li>C#</li>
+                <li>DirectX 12</li>
+                <li>Graphics</li>
+                <li>Low-level</li>
+                <li>Rendering</li>
+                <li>C++</li>
+                <li>HLSL</li>
             </ul>
+            <em>February 2024</em>
         </dd>
-    </div>
+        </div>
 
-    <div id="DirectX-11-Physics">
-    <dt><h3><a href="projects/DirectX-11-Physics.html" title="DirectX 11 Physics">DirectX 11 Physics</a></h3></dt>
-    <dd>
-        <a href="projects/directx-11-physics.html" title ="DirectX 11 Physics"><img src="assets/directx-11-physics.png" alt="A screen shot of DirectX 11 Physics, showing cubes bouncing in a graphics application." style="width:512px;"/></a>
-        <p>
-            DirectX 11 Physics is a physics framework built to extend my <a href="#DirectX-11-Graphics">DirectX 11 Graphics Framework</a> as another part of my <em>Further Games and Graphics Concepts</em> <strong>Level 5</strong> module.
-            It's a rudimentary physics framework that can handle collisions and collision resolution between rigid bodies.
-            The project can handle box, plane and spherical collisions and their resolutions, although collision rotations appear incorrectly.
-        </p>
-        <ul>
-            <li>DirectX 11</li>
-            <li>Physics</li>
-            <li>C++</li>
-        </ul>
-    </dd>
-    </div>
+        <div id="LLPO">
+        <dt><h3><a href="projects/llpo.html" title="LLPO">LLPO</a></h3></dt>
+        <dd>
+            <a href="projects/llpo.html" title ="LLPO"><img src="assets/llpo.png" alt="A screenshot of LLPO, showing bouncing cubes" style="width:70%;"/></a>
+            <p style="width:70%;">
+                Low-Level Platform Optimization, or <em>LLPO</em>, is an optimized physics application completed for my <em>Low-Level Platform Optimization</em> <strong>Level 6</strong> module.
+                It's an optimized version of an OpenGL physics framework that makes use of memory management and asynchronous multithreading to improve performance.
+                I also ported this framework to the PlayStation 4 SDK, which involved getting familiar with Sony's PS4 graphics API and SDK.
+            </p>
+            <ul>
+                <li>OpenGL</li>
+                <li>ORBIS</li>
+                <li>Graphics</li>
+                <li>Physics</li>
+                <li>Low-level</li>
+                <li>Memory management</li>
+                <li>Asynchronous multithreading</li>
+                <li>C++</li>
+                <li>PSSL</li>
+            </ul>
+            <em>December 2023</em>
+        </dd>
+        </div>
 
-</dl>
+        <div id="TP">
+            <dt><h3><a href="https://bonitaworalert.itch.io/tp" title="TP">TP</a></h3></dt>
+            <dd>
+                <a href="https://bonitaworalert.itch.io/tp" title ="TP"><img src="assets/tp.png" alt="TP's cover art, a drawing of a spooky bathroom." style="width:70%;"/></a>
+                <p style="width:70%;">
+                    TP is a silly, spooky first-person horror game made in Unity for <a href="https://itch.io/jam/scream-jam-2023">Scream Jam 2023</a>, where it placed 6th.
+                    I helped make the game as part of a group three (two programmers and an artist) over a single week.
+                    I worked on the UI, programming many of monster mechanics, level design and even voice acting!
+                </p>
+                <ul>
+                    <li>Unity</li>
+                    <li>UI</li>
+                    <li>Gameplay</li>
+                    <li>C#</li>
+                </ul>
+                <em>October 2023</em>
+            </dd>
+        </div>
+
+        <div id="DirectX-11-Graphics">
+        <dt><h3><a href="projects/DirectX-11-Graphics.html" title="DirectX 11 Graphics">DirectX 11 Graphics</a></h3></dt>
+        <dd>
+            <a href="projects/DirectX-11-Graphics.html" title ="DirectX 11 Graphics"><img src="assets/directx-11-graphics.png" alt="A screen shot of DirectX 11 Graphics, showing detailed objects in a graphics application." style="width:70%;"/></a>
+            <p style="width:70%;">
+                DirectX 11 Graphics is a graphics framework built in DirectX 11 for my <em>Further Games and Graphics Concepts</em> <strong>Level 5</strong> module.
+                It's a basic graphics framework that can load models and textures, facilitating the creation of various scenes, explorable through a flying camera.
+                It features Phong lighting, specular mapping, skyboxes and billboarding.
+            </p>
+            <ul>
+                <li>DirectX 11</li>
+                <li>Graphics</li>
+                <li>Rendering</li>
+                <li>C++</li>
+                <li>HLSL</li>
+            </ul>
+            <em>December 2022</em>
+        </dd>
+        </div>
+
+        <div id="DirectX-11-Physics">
+        <dt><h3><a href="projects/DirectX-11-Physics.html" title="DirectX 11 Physics">DirectX 11 Physics</a></h3></dt>
+        <dd>
+            <a href="projects/directx-11-physics.html" title ="DirectX 11 Physics"><img src="assets/directx-11-physics.png" alt="A screen shot of DirectX 11 Physics, showing cubes bouncing in a graphics application." style="width:70%;"/></a>
+            <p style="width:70%;">
+                DirectX 11 Physics is a physics framework built to extend my <a href="#DirectX-11-Graphics">DirectX 11 Graphics Framework</a> as another part of my <em>Further Games and Graphics Concepts</em> <strong>Level 5</strong> module.
+                It's a rudimentary physics framework that can handle collisions and collision resolution between rigid bodies.
+                The project can handle box, plane and spherical collisions and their resolutions, although collision rotations appear incorrectly.
+            </p>
+            <ul>
+                <li>DirectX 11</li>
+                <li>Physics</li>
+                <li>C++</li>
+            </ul>
+            <em>May 2023</em>
+        </dd>
+        </div>
+
+        <div id="High-Vaultage">
+            <dt><h3><a href="projects/high-vaultage.html" title="High Vaultage">High Vaultage</a></h3></dt>
+            <dd>
+                <a href="projects/high-vaultage.html" title ="High Vaultage"><img src="assets/high-vaultage.png" alt="A screen shot of High Vaultage, a futuristic-looking FPS." style="width:70%;"/></a>
+                <p style="width:70%;">
+                    High Vaultage is a Parkour Platformer FPS made in Unity for my <em>Technical Games Production</em> <strong>Level 5</strong> module.
+                    I helped make the game as part of a group of seven over the course of 6 weeks.
+                    I worked primarily on gameplay and UI programming, where I made the tweakable settings, weapon wheel and weapons system.
+                </p>
+                <ul>
+                    <li>Unity</li>
+                    <li>UI</li>
+                    <li>Gameplay</li>
+                    <li>C#</li>
+                </ul>
+                <em>February 2023</em>
+            </dd>
+        </div>
+
+        <div id="Vehicle-AI">
+            <dt><h3><a href="projects/vehicle-ai.html" title="vehicle-ai">Vehicle AI</a></h3></dt>
+            <dd>
+                <a href="projects/vehicle-ai.html" title ="vehicle-ai"><img src="assets/vehicle-ai.png" alt="A screen shot of my Vehicle AI project showing two 2D cars from above." style="width:70%;"/></a>
+                <p style="width:70%;">
+                    Vehicle AI is a steering behaviours and decision making simulation involving two taxi drivers trying to deliver fares. It was created for my <em>Artificial Intelligence For Games</em> <strong>Level 5</strong> module.
+                    The application features two autonomous cars that can navigate and 2D world according to steering behaviours the user selects.
+                    It also features decision making through finite state machines; a seperate mode can be selected that makes the cars act as taxi drivers, making decisions according to the location of fares, destinations, fuel pickups and speed boosts.
+                </p>
+                <ul>
+                    <li>AI</li>
+                    <li>C++</li>
+                    <li>Steering behaviours</li>
+                    <li>Finite state machines</li>
+                </ul>
+                <em>May 2023</em>
+            </dd>
+        </div>
+
+        <div id="Chatroom">
+            <dt><h3><a href="projects/Chatroom.html" title="Chatroom">Chatroom</a></h3></dt>
+            <dd>
+                <a href="projects/Chatroom.html" title ="Chatroom"><img src="assets/Chatroom.png" alt="Two client applications connected and talking in a brightly coloured chatroom." style="width:70%;"/></a>
+                <p style="width:70%;">
+                    Chatroom is a client-server networking project with a simple chatroom interface, made for my <em>Concurrent Networking Applications</em> <strong>Level 6</strong> module.
+                    I made the application in C#, with the interface built in .NET for the chatroom. It uses a dedicated server, and the chatroom features direct and public messaging, nicknames and more.
+                    The application encrypts and packets all data transferred, and makes use of multithreading to handle networking operations concurrently.
+                </p>
+                <ul>
+                    <li>Networking</li>
+                    <li>Encryption</li>
+                    <li>Windows forms</li>
+                    <li>Client-server architecture</li>
+                    <li>Multithreading</li>
+                </ul>
+                <em>December 2022</em>
+            </dd>
+        </div>
+    </dl>
+</div>
 </body>
 </html>
