@@ -15,21 +15,30 @@
     
     <title>Isaac Dexter</title>
   </head>
+  
+  <!-- Last updated: 21/02/2024. !-->
+  
   <body>
 
-<!--About me section, describing who I am and what I do!-->
-<div id="Nutshell">
     <h1>Isaac Dexter</h1>
+
+
+<!-- Sidebar to faciliate navigation of the page. !-->
+<div id="Sidebar">
+<div style="position:fixed;z-index:1;top:0;right:3%">
+	<h2>Isaac Dexter</h2>
     <ol>
         <li><a href="#About">About</a></li>
         <li><a href="#Contact">Contact</a></li>
-        <li><a href="#Projects">Projects</a></li>
         <li><a href="#Skills">Skills</a></li>
-        <li><a href="#Experience">Experience</a></li>
         <li><a href="#Education">Education</a></li>
+        <li><a href="#Experience">Experience</a></li>
+		<li><a href="#Projects">Projects</a></li>
     </ol>
 </div>
+</div>
 
+<!--About me section, describing who I am and what I do. !-->
 <div id="About">
     <h2>About</h2>
     <img src="assets/Profile.png" alt="A photo of me holding a chicken!" style="width:35%;"/>
@@ -45,7 +54,7 @@
     <h3>Hobbies</h3>
     <ul>
         <li>Climbing 🧗</li>
-        <li><a href="https://sites.google.com/view/kroak/home">Drumming 🥁</a></li>
+        <li>Drumming 🥁</li>
         <li>Hiking 🥾</li>
         <li>Falconry 🦅</li>
         <li>Baking 🍞</li>
@@ -55,13 +64,85 @@
 <!--Contact section, containing links to where else I am!-->
 <div id="Contact">
     <h2>Contact</h2>
+	<address>
     <ul>
         <li><a href="https://uk.linkedin.com/in/isaac-dexter-aa1818224" title="linkedin">linkedin</a></li>
         <li><a href="https://github.com/IsaacDexter" title="github">github</a></li>
-        <li><a href="https://docs.google.com/document/d/e/2PACX-1vRVIXV5KQ0P_dTeSegqeQqrUhfwy6Pf3ZZgioPZx9cK9i5uwm0KptKYElo2Fo3uxX8dVVGkeqGT-JwW/pub" title="resume">resume</a></li>
+        <li><a href="assets/Resume.pdf" title="resume">resume</a></li>
         <li><a href="https://twitter.com/Isaac_W_Dexter" title="twitter">twitter</a></li>
         <li><a href="mailto:isaacdexter@gmail.com" title="isaacdexter@gmail.com">isaacdexter@gmail.com</a></li>
     </ul>
+	</address>
+</div>
+
+<div id="Skills">
+	<h2>Skills</h2>
+	<ul>
+		<li>C++</li>
+		<li>DirectX 12</li>
+		<li>Mathematics &amp; Vector Maths</li>
+		<li>HLSL &amp; PSSL</li>
+		<li>DirectX 11 &amp; OpenGL</li>
+		<li>Unreal Engine 4/5</li>
+		<li>Unity &amp; C#</li>
+	</ul>
+</div>
+
+<div id="Education">
+	<h2>Education</h2>
+	<dl>
+		<dt><h3>BSc (Hons) Games Programming</h3></dt>
+		<dd>
+			<p style="width:70%;">
+				<em>Staffordshire University, Stoke-on-Trent</em><br>
+				Sep 2023 - Present
+				<ul>
+					<li>Level 6 Games Programming student on a TIGA accredited course tailored towards building industry standard skills and practices.</li>
+				</ul>
+			</p>
+		</dd>
+		<dt><h3>A-Levels</h3></dt>
+		<dd>
+			<p style="width:70%;">
+				<em>The Corsham School, Corsham</em><br>
+				Sep 2019 - Aug 2021
+				<ul>
+					<li>A* - Computer Science</li>
+					<li>A* - Mathematics</li>
+					<li>A - Further Mathematics</li>
+				</ul>
+			</p>
+		</dd>
+</div>
+
+<div id="Experience">
+	<h2>Experience</h2>
+	<dl>
+		<dt><h3>Kingsley Bird &amp; Falconry center</h3></dt>
+		<dd>
+			<p style="width:70%;">
+				<em>Kingsley Moor</em><br>
+				Volunteer<br>
+				Jan 2023 - Mar 2023
+				<ul>
+					<li>Animal care</li>
+					<li>Landscaping</li>
+					<li>Maintenance</li>
+				</ul>
+			</p>
+		</dd>
+		<dt><h3>Atworth Youth Club</h3></dt>
+		<dd>
+			<p style="width:70%;">
+				<em>Atworth</em><br>
+				Volunteer<br>
+				Jan 2016 - Sep 2019
+				<ul>
+					<li>Working with children</li>
+					<li>Activity organization</li>
+				</ul>
+			</p>
+		</dd>
 </div>
 
 <!--The various projects I've completed in both game jams and my course-->
@@ -72,7 +153,7 @@
         <div id="EMTE">
         <dt><h3><a href="projects/EMTE.html" title="EMTE">EMTE</a></h3></dt>
         <dd>
-            <a href="projects/EMTE.html" title="EMTE"><img src="assets/EMTE.png" alt="A screenshot of EMTE, showing a prototypical graphics application" style="width:70%;"/></a>
+            <a href="projects/EMTE.html" title="EMTE"><img src="assets/EMTE.png" alt="A screenshot of EMTE, showing a pair of portals." style="width:70%;"/></a>
             <p style="width:70%;">
                 Euclidean Manifold Topology Engine, or <em>EMTE</em>, is the artefact I've been creating for my dissertation. 
                 It's a prototype for an engine and toolkit tailored to making things that defy the rules of geometry in our world.
@@ -129,9 +210,31 @@
                     <li>Gameplay</li>
                     <li>C#</li>
                 </ul>
-                <em>October 2023</em>
+                <em>Oct 2023</em>
             </dd>
         </div>
+		
+		<div id="DirectX-12-Toolkit-Graphics">
+			<dt><h3><a href="https://github.com/IsaacDexter/DirectX-12-Toolkit-Graphics" title="DirectX 12 Toolkit Graphics">DirectX 12 Toolkit Graphics</a></h3></dt>
+            <dd>
+                <a href="https://github.com/IsaacDexter/DirectX-12-Toolkit-Graphics" title="DirectX 12 Toolkit Graphics"><img src="assets/DirectX-12-Toolkit-Graphics.png" alt="A prototype graphics application featuring 3D shapes on a grid." style="width:70%;"/></a>
+                <p style="width:70%;">
+                    <a href="http://go.microsoft.com/fwlink/?LinkID=615561">DirectX 12 Toolkit</a> is a fantastic tool for teaching yourself the fundamentals of a low-level graphics API if you're unfamiliar. 
+					This project was my way of doing so! It's in no state of completion (and likely never will be), but it taught me what I needed to know to apply myself to this API.
+					I would highly recommend a combination of <a href="https://github.com/microsoft/DirectXTK12/wiki/Getting-Started" title="DirectX 12 Toolkit's Tutorial">DirectX 12 Toolkit's Tutorial<a> and then the <a href="https://github.com/microsoft/DirectX-Graphics-Samples" title="DirectX 12 Graphics Samples">DirectX 12 Graphics Samples</a> to teach yourself DirectX 12.
+                </p>
+                <ul>
+                    <li>DirectX 12</li>
+					<li>DirectX 12 Toolkit</li>
+					<li>Graphics</li>
+					<li>Low-level</li>
+					<li>Rendering</li>
+					<li>C++</li>
+					<li>HLSL</li>
+                </ul>
+                <em>Jan 2024</em>
+            </dd>
+		</div>
 
         <div id="DirectX-11-Graphics">
         <dt><h3><a href="projects/DirectX-11-Graphics.html" title="DirectX 11 Graphics">DirectX 11 Graphics</a></h3></dt>
