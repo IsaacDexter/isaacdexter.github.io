@@ -18,7 +18,86 @@
 
 
 <body>
-    <h1><a href="/" title="Isaac Dexter">Isaac Dexter</a></h1>
-    <h2><a href="https://github.com/IsaacDexter/EMTE" title="EMTE">EMTE</a></h2>
+
+	<!-- Sidebar to faciliate navigation of the page. !-->
+	<div id="Sidebar">
+	<div style="position:fixed;z-index:1;top:0;right:3%">
+		<h2>Isaac Dexter</h2>
+		<ol>
+			<li><a href="/">Isaac Dexter</a></li>
+			<li>
+				<a href="#EMTE">EMTE</a>
+				<ul>
+					<li><a href="#Renderer">Renderer</a></li>
+					<li><a href="#Portals">Portals</a></li>
+					<li><a href="#Reflection">Reflection</a></li>
+				</ul>
+			</li>
+			
+		</ol>
+	</div>
+	</div>
+	
+	<div id="EMTE">
+    <h1><a href="https://github.com/IsaacDexter/EMTE" title="EMTE">EMTE</a></h1>
+	<p style="width:70%;">Euclidean Manifold Topology Engine, or <em>EMTE</em>, is the focus of my dissertation. 
+	It's a prototype toolset and lightweight renderer for authoring non-Euclidean scenes. 
+	These spaces are implemented through <em>portals</em>, transitions between two points in space.
+	</p>
+	</div>
+	
+	<div id="Renderer">
+		<h2>Renderer</h2>
+		<p style="width:70%;">The renderer was created using DirectX 12. DirectX 12 was chosen thanks to its:
+		<ul>
+			<li>
+				<h3>Familiarity</h3>
+				<p style="width:70%;">I've used DirectX 11 for many projects, so it seemed natural to expand my graphical knowledge with a low-level graphics API.
+				Learning DirectX 12 should provide me the skills to make use of other low-level graphics APIs, which I can apply to any of my graphical projects.
+				</p>
+			</li>
+			<li>
+				<h3>Performance</h3>
+				<p style="width:70%;">Rendering portals is a typically recursive business, so it's vital for these portals to render as efficiently as possible.
+				DirectX 12's explicit control allows me to fine tune these portals to render efficiently, which is vital for portal self-recursion.</p>
+			</li>
+			<li>
+				<h3>Capabilities</h3>
+				<p style="width:70%;">While this project does not make use of real-time raytracing, it has been considered for further development.
+				Raytraced non-Euclidean spaces are a fascinating area of research. 
+				I highly recommend reading Pixar's short paper, <a href="https://graphics.pixar.com/library/PortalsIncredibles2/">Into the Voyd</a>. It's fascinating.
+				Being able to make use of DXR in a further stage of this project's development could have a profound impact on the toolset.</p>
+			</li>
+		</ul>
+		</p>
+	</div>
+	
+	<div id="Portals">
+		<h2>Portals</h2>
+		<p style="width:70%;">I implemented portals through the (somewhat old-fashioned) <em>render texture</em> technique.
+		This was primarily in the interests of time - the timeframe for this project was short and the goal was only to produce an initial prototype.
+		Render to texture is simple, but far from the most effective way of rendering portals.
+		Rendering directly to the back buffer, as opposed to a seperate render target, using a <em>stencil pass</em> is a far more efficient way of rendering rasterizer portals.
+		<a href="https://youtu.be/5VozHerlOQw?si=M1AMYXYwZTBWet85">That's a Wrap</a>, The Manifold Garden rendering retrospective, talks about the subject excellently.
+		</p>
+		<img src="/assets/EMTEPortals.png" alt="A screenshot of EMTE, showing a pair of portals." style="width:70%;"/>
+	</div>
+	
+	<div id="Reflection">
+		<h2>Reflection</h2>
+		<p style="width:70%">EMTE was a difficult project. It was my first time using a low-level graphics API.
+		Overcoming the unfamiliarities and complexities of DirectX 12 took up the bulk of my time at the start of the project.
+		I found that <a href="http://go.microsoft.com/fwlink/?LinkID=615561">DirectX Tool Kit</a>'s tutorial helped massively in grasping the basics of a high-level API.
+		I then used the <a href="https://github.com/microsoft/DirectX-Graphics-Samples">DirectX Graphics Samples</a> to help me understand the intricacies of the system.</p>
+		<p style="width:70%">The portals did not come out the way I would've liked. 
+		Once I've had ample time to reflect and recharge, I'd be interested in implementing a stencil pass approach in the same vein as Portal's or Manifold Garden's.
+		Additionally, there are some inconsistencies with the portals' angles: I fail to reposition the portals' virtual cameras according to player displacement. 
+		To do this, I need to also implement some way of accurately culling geometry in front of a portal's other side.
+		</p>
+		<p>Also, the GUI left a lot to be desired. 
+		I used the fantastic <a href="https://github.com/ocornut/imgui">Dear ImGui</a> for the GUI, but I took on board some criticism following the user study that was a part of this project.
+		The GUI is going to be overhauled in the future with some quality of life changes, taking on what I learned in <a href="https://github.com/IsaacDexter/DirectX-11-Advanced-Graphics">DirectX 11 Advanced Graphics</a>.</p>
+	</div>
+	
 </body>
 </html>
